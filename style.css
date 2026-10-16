@@ -219,8 +219,8 @@ code { font-family: ui-monospace, Consolas, monospace; font-size: .9em; backgrou
   line-height: .85; letter-spacing: -.01em;
 }
 .hero-line { display: block; white-space: nowrap; font-size: clamp(4rem, 14vw, 17rem); }
-.hero-line--1 { align-self: flex-start; margin-left: 20%; }
-.hero-line--2 { align-self: flex-start; margin-left: 36%; margin-top: -.02em; display: inline-flex; align-items: baseline; }
+.hero-line--1 { align-self: flex-start; margin-left: 16%; }
+.hero-line--2 { align-self: flex-start; margin-left: 32%; margin-top: -.02em; display: inline-flex; align-items: baseline; }
 
 
 .hero-o { display: inline-block; position: relative; width: 1.5em; height: 1.3em; vertical-align: -.1em; margin: -0.3em; }
