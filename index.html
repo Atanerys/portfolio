@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пичуева Рената — портфолио UX/UI-дизайнера</title>
+  <meta name="description" content="Портфолио студентки СПбГУПТД, UX/UI-дизайнера: проекты, навыки, образование и контакты.">
+  <meta name="theme-color" content="#DDE3FF">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+ 
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    } catch (e) { document.documentElement.dataset.theme = 'light'; }
+  </script>
+</head>
+<body>
+
+  
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="spark" viewBox="0 0 100 100">
+      <path d="M50 0C54 30 70 46 100 50 70 54 54 70 50 100 46 70 30 54 0 50 30 46 46 30 50 0Z"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Пичуева Рената — в начало страницы">Р.П.</a>
+
+    <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+      <ul>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#education">Образование</a></li>
+        <li><a href="#experience">Опыт</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-tools">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false" aria-label="Включить тёмную тему">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/>
+        </svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+   
+    <section class="hero" id="top" aria-labelledby="hero-title">
+
+      
+      <div class="hero-blur hero-blur--left" aria-hidden="true"></div>
+      <div class="hero-blur hero-blur--right" aria-hidden="true"></div>
+
+      
+      <img src="assets/images/ribbon-left.png" alt="" class="hero-ribbon hero-ribbon--left" aria-hidden="true">
+      <img src="assets/images/ribbon-right.png" alt="" class="hero-ribbon hero-ribbon--right" aria-hidden="true">
+
+      
+      <span class="hero-star star--blue-lg" aria-hidden="true"></span>
+      <span class="hero-star star--blue-blur" aria-hidden="true"></span>
+      <span class="hero-star star--blue-sm-1" aria-hidden="true"></span>
+      <span class="hero-star star--blue-sm-2" aria-hidden="true"></span>
+      <span class="hero-star star--white-1" aria-hidden="true"></span>
+      <span class="hero-star star--white-2" aria-hidden="true"></span>
+      <span class="hero-star star--white-3" aria-hidden="true"></span>
+      <span class="hero-star star--blue-blur-2" aria-hidden="true"></span>
+
+    
+      <div class="hero-text">
+        <p class="hero-name" data-load style="--d:.05s">Пичуева Рената</p>
+
+        <h1 class="hero-title" id="hero-title" aria-label="Portfolio" data-load style="--d:.2s">
+          <span class="hero-line hero-line--1" aria-hidden="true">PoRt</span>
+          <span class="hero-line hero-line--2" aria-hidden="true">F<span class="hero-o"><img src="assets/images/balloon.png" alt="" class="hero-balloon-img"></span>LiO</span>
+        </h1>
+      </div>
+
+      <div class="hero-intro" data-load style="--d:.5s">
+        <p class="hero-lead">UX/UI-дизайнер, создаю понятные интерфейсы и продумываю пользовательский опыт.</p>
+        <p class="hero-caption">Студентка 4 курса, СПбГУПТД<br>«Прикладная информатика в дизайне»</p>
+        <a class="btn" href="#projects">Смотреть проекты</a>
+      </div>
+
+      
+      <img src="assets/images/girl.png" alt="" class="hero-girl" aria-hidden="true">
+    </section>
+
+    
+    <div class="sheet">
+
+      <!-- ABOUT -->
+      <section class="sheet__about" id="about" aria-labelledby="about-title">
+        <h2 class="about__label reveal" id="about-title">Обо мне</h2>
+
+        <div class="about__main">
+          <div class="about__identity reveal">
+            <p class="about__name">Пичуева<br>Рената</p>
+            <svg class="about__arrow" viewBox="0 0 160 70" aria-hidden="true" focusable="false">
+              <path d="M4 52C40 8 100 4 150 40M150 40l-22-4M150 40l-8 20" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          
+          <div class="about__text reveal">
+            <p><span class="about__hi">Привет!</span> Я учусь на четвёртом курсе СПбГУПТД по направлению «Прикладная информатика в дизайне». Мне ближе всего UX/UI-дизайн: интересно разбираться, как человек проходит путь по интерфейсу, и делать этот путь понятнее.</p>
+            <p>Кроме интерфейсов, занимаюсь визуальными концепциями и собираю цифровые продукты от макета в Figma до вёрстки. Профессиональный опыт у меня пока складывается в рамках учебных проектов — их я и показываю на этой странице.</p>
+          </div>
+        </div>
+
+        <div class="about__side">
+          <figure class="about__photo reveal">
+            
+            <img src="assets/images/photo.png" alt="Портрет Ренаты Пичуевой" width="800" height="1000" loading="lazy">
+          </figure>
+          <p class="about__contact reveal">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <a href="#contact">Почта и ссылки — в разделе «Контакты»</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="sheet__lower">
+        <div class="sheet__col">
+        
+          <section class="education" id="education" aria-labelledby="education-title">
+            <h2 class="sheet__h reveal" id="education-title"><svg class="spark" aria-hidden="true" focusable="false"><use href="#spark"/></svg>Образование</h2>
+            <div class="reveal">
+              <p class="education__uni">СПбГУПТД — Санкт-Петербургский государственный университет промышленных технологий и дизайна</p>
+              <p class="education__major">Прикладная информатика в дизайне</p>
+             
+              <p class="education__course">4 курс</p>
+            </div>
+          </section>
+
+          <section class="directions" aria-labelledby="directions-title">
+            <h2 class="sheet__h reveal" id="directions-title"><svg class="spark" aria-hidden="true" focusable="false"><use href="#spark"/></svg>Направления</h2>
+            <ul class="bullets reveal">
+              <li>Дизайн интерфейсов</li>
+              <li>Веб-дизайн</li>
+              <li>Мобильные приложения</li>
+              <li>Интерактивные веб-проекты</li>
+              <li>3D-графика и визуализация</li>
+            </ul>
+          </section>
+        </div>
+
+        
+        <section class="skills" id="skills" aria-labelledby="skills-title">
+          <h2 class="sheet__h reveal" id="skills-title"><svg class="spark" aria-hidden="true" focusable="false"><use href="#spark"/></svg>Навыки</h2>
+          <ul class="tools reveal">
+            <li><button class="tool" type="button" aria-pressed="false" data-note="Исследую сценарии, строю структуру экранов и довожу интерфейс до понятного визуального решения."><span class="tool__mark">UX</span><span class="tool__label">UX/UI-дизайн</span></button></li>
+            <li><button class="tool" type="button" aria-pressed="false" data-note="Макеты, компоненты, auto layout и кликабельные прототипы."><span class="tool__mark">Fg</span><span class="tool__label">Figma</span></button></li>
+            <li><button class="tool" type="button" aria-pressed="false" data-note="Семантическая вёрстка: main, section, button — там, где они нужны по смыслу."><span class="tool__mark">&lt;/&gt;</span><span class="tool__label">HTML</span></button></li>
+            <li><button class="tool" type="button" aria-pressed="false" data-note="Адаптивные сетки на grid, типографика и анимации интерфейса."><span class="tool__mark">{ }</span><span class="tool__label">CSS</span></button></li>
+            <li><button class="tool" type="button" aria-pressed="false" data-note="Интерактив страницы: меню, модальные окна, переключение темы."><span class="tool__mark">JS</span><span class="tool__label">JavaScript</span></button></li>
+            <li><button class="tool" type="button" aria-pressed="false" data-note="Базовое 3D-моделирование, материалы, свет и визуализация сцен."><span class="tool__mark">Bl</span><span class="tool__label">Blender</span></button></li>
+          </ul>
+          <p class="tools__note" id="tool-note" aria-live="polite">Нажмите или наведите курсор на плитку — здесь появится пояснение.</p>
+        </section>
+      </div>
+    </div>
+
+    
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="projects__stage">
+      
+      <div class="projects__grid">
+        <header class="projects__intro">
+          <h2 class="section-title reveal" id="projects-title">Проекты</h2>
+          <p class="section-note reveal">Пять проектов: айдентика, логотип, 3D-персонаж, веб-дизайн и игровые локации.</p>
+          <p class="projects__hint" aria-hidden="true">Прокручивайте вниз ↓</p>
+        </header>
+
+                <article class="project project--1 reveal">
+          <button class="project__media" type="button" data-open aria-label="Открыть описание проекта: Айдентика для выставки NVIDIA">
+            <img src="assets/images/project-1.png" alt="Превью проекта «Айдентика для выставки NVIDIA»: зал с экраном и баннерами «AI: art of future»" width="1465" height="992" loading="lazy">
+            <span class="project__hover"><span>Айдентика</span><span>Открыть описание</span></span>
+          </button>
+          <div class="project__caption">
+            <p class="project__cat">Айдентика</p>
+            <h3 class="project__title">Айдентика для выставки NVIDIA</h3>
+            <p class="project__desc">Фирменный стиль выставки «AI: art of future»: зелёная графика, штриховые акценты и сцена с экраном.</p>
+          </div>
+          <div class="project__more" hidden>
+            <p>Айдентика для выставки компании NVIDIA «AI: art of future». Визуальный язык построен на зелёных гранях, строгой гротескной типографике и штриховых акцентах в углах. Стиль показан на сцене: основной экран, вертикальные баннеры и ряды кресел.</p>
+            <dl>
+              <dt>Моя роль</dt><dd>Укажите, за что вы отвечали.</dd>
+              <dt>Инструменты</dt><dd>Укажите инструменты.</dd>
+              <dt>Что в проекте</dt><dd>Баннеры, экран презентации и визуализация зала в едином стиле.</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="project project--2 reveal">
+          <button class="project__media" type="button" data-open aria-label="Открыть описание проекта: Логотип хоррор-квеста Sting">
+            <img src="assets/images/project-2.png" alt="Превью проекта «Логотип хоррор-квеста Sting»: шоппер с логотипом в виде гриба" width="635" height="872" loading="lazy">
+            <span class="project__hover"><span>Логотип</span><span>Открыть описание</span></span>
+          </button>
+          <div class="project__caption">
+            <p class="project__cat">Логотип</p>
+            <h3 class="project__title">Логотип хоррор-квеста Sting</h3>
+            <p class="project__desc">Логотип хоррор-квеста: гриб-персонаж в венке из листьев и рукописная надпись «Sting».</p>
+          </div>
+          <div class="project__more" hidden>
+            <p>Логотип для хоррор-квеста Sting. Основа знака — персонаж-гриб с красной шляпкой в венке из веток, под ним рукописная надпись «Sting» и подпись «хоррор квест». Для презентации знак размещён на мерче — сумке-шоппере.</p>
+            <dl>
+              <dt>Моя роль</dt><dd>Укажите, за что вы отвечали.</dd>
+              <dt>Инструменты</dt><dd>Укажите инструменты.</dd>
+              <dt>Что в проекте</dt><dd>Знак с подписью и пример его применения на мерче.</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="project project--3 reveal">
+          <button class="project__media" type="button" data-open aria-label="Открыть описание проекта: Sleepy — робот для улучшения сна">
+            <img src="assets/images/project-3.png" alt="Превью проекта «Sleepy»: персонаж-робот с кошачьими ушами на фоне ночной комнаты и логотип Sleepy" width="1600" height="900" loading="lazy">
+            <span class="project__hover"><span>3D-графика и персонаж</span><span>Открыть описание</span></span>
+          </button>
+          <div class="project__caption">
+            <p class="project__cat">3D-графика и персонаж</p>
+            <h3 class="project__title">Sleepy — робот для улучшения сна</h3>
+            <p class="project__desc">Создание робота-помощника для улучшения сна: персонаж, ночная сцена и логотип.</p>
+          </div>
+          <div class="project__more" hidden>
+            <p>Sleepy — робот, созданный для улучшения сна. Спокойная ночная сцена в синих тонах со звёздами, персонаж с кошачьими ушами и логотип, в буквах которого спрятаны глаза.</p>
+            <dl>
+              <dt>Моя роль</dt><dd>Укажите, за что вы отвечали.</dd>
+              <dt>Инструменты</dt><dd>Укажите инструменты.</dd>
+              <dt>Что в проекте</dt><dd>Образ робота, логотип и ночная сцена для его презентации.</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="project project--4 reveal">
+          <button class="project__media" type="button" data-open aria-label="Открыть описание проекта: Сайт иммерсивного театра Bleep">
+            <img src="assets/images/project-4.png" alt="Превью проекта «Сайт театра Bleep»: главная, страница оплаты и афиша" width="862" height="1011" loading="lazy">
+            <span class="project__hover"><span>Веб-дизайн</span><span>Открыть описание</span></span>
+          </button>
+          <div class="project__caption">
+            <p class="project__cat">Веб-дизайн</p>
+            <h3 class="project__title">Сайт иммерсивного театра Bleep</h3>
+            <p class="project__desc">Сайт иммерсивного театра: главная с крупным заголовком, афиша спектаклей и страница оплаты билета.</p>
+          </div>
+          <div class="project__more" hidden>
+            <p>Сайт иммерсивного театра Bleep. Макеты трёх страниц: главная с огромным засечным заголовком и карточками разделов, афиша со списком спектаклей и страница оформления заказа. Фирменный приём — градиент из синего и жёлтого.</p>
+            <dl>
+              <dt>Моя роль</dt><dd>Укажите, за что вы отвечали.</dd>
+              <dt>Инструменты</dt><dd>Укажите инструменты, например Figma.</dd>
+              <dt>Что в проекте</dt><dd>Макеты главной, афиши и оплаты билета в одном стиле.</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="project project--5 reveal">
+          <button class="project__media" type="button" data-open aria-label="Открыть описание проекта: Локации хоррор-игры Placebo">
+            <img src="assets/images/project-5.png" alt="Превью проекта «Placebo»: цирковая арена со шкатулкой-клоуном и инвентарём с фонариком" width="1600" height="900" loading="lazy">
+            <span class="project__hover"><span>3D-графика, игровые локации</span><span>Открыть описание</span></span>
+          </button>
+          <div class="project__caption">
+            <p class="project__cat">3D-графика, игровые локации</p>
+            <h3 class="project__title">Локации хоррор-игры Placebo</h3>
+            <p class="project__desc">Локации хоррор-игры: цирковая арена с шатром, трибунами и шкатулкой-клоуном.</p>
+          </div>
+          <div class="project__more" hidden>
+            <p>Локации для хоррор-игры Placebo. Цирковая арена: шатёр в красно-белую полоску, ряды кресел, барьер, реквизит, шкатулка с клоуном в центре. В кадре показан и интерфейс — инвентарь с фонариком.</p>
+            <dl>
+              <dt>Моя роль</dt><dd>Укажите, за что вы отвечали.</dd>
+              <dt>Инструменты</dt><dd>Укажите инструменты, например Blender.</dd>
+              <dt>Что в проекте</dt><dd>Арена с реквизитом, светом и интерфейсом инвентаря.</dd>
+            </dl>
+          </div>
+        </article>
+
+   
+        
+      </div>
+    </section>
+
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <h2 class="contact__title reveal" id="contact-title">Давайте обсудим проект или стажировку</h2>
+
+
+      <a class="contact__mail reveal" href="mailto:ваша-почта@example.com" data-placeholder>
+        <span>[3.14.renat@gmail.com]</span>
+      </a>
+
+      <ul class="contact__links reveal">
+        <li><a class="contact__link" href="#contact" data-placeholder>[Behance]</a></li>
+        <li><a class="contact__link" href="#contact" data-placeholder>[Telegram]</a></li>
+        <li><a class="contact__link" href="#contact" data-placeholder>[LinkedIn]</a></li>
+      </ul>
+      <p class="toast" id="toast" role="status" aria-live="polite"></p>
+    </section>
+
+  </main>
+
+  
+  <footer class="site-footer" id="footer">
+    <div class="footer__top">
+      <p class="footer__brand">Пичуева Рената — портфолио UX/UI-дизайнера</p>
+      <nav aria-label="Навигация в подвале">
+        <ul class="footer__nav">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#education">Образование</a></li>
+          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <dl class="footer__info">
+      <div>
+        <dt>Нейросеть</dt>
+        <dd>deepseek</dd>
+      </div>
+      <div>
+        <dt>Время выполнения</dt>
+        
+        <dd>[6ч]</dd>
+      </div>
+      <div>
+        <dt>JavaScript-функционал</dt>
+        <dd>мобильная навигация, анимация при прокрутке, 3D-прокрутка проектов, интерактивные модальные окна проектов, переключение темы и динамическое отображение года</dd>
+      </div>
+    </dl>
+
+    <p class="footer__bottom">© <span id="year">2026</span> Пичуева Рената</p>
+  </footer>
+
+ 
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+    <button class="modal__close" type="button" id="modal-close" aria-label="Закрыть окно">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal__grid">
+      <img class="modal__img" id="modal-img" src="" alt="">
+      <div class="modal__content">
+        <p class="project__cat" id="modal-cat"></p>
+        <h3 class="modal__title" id="modal-title"></h3>
+        <div class="modal__more" id="modal-more"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
